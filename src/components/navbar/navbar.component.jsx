@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 import HamburgerMenu from "react-hamburger-menu";
 
-import bg from "../../img/background-solid.png";
+import bg from "../../../img/background-solid.png";
 // console.log(bg);
 class Navbar extends React.Component {
     constructor() {
