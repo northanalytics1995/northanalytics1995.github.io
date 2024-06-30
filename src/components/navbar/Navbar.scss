@@ -1,0 +1,118 @@
+
+@import "../../styles/_colors.scss";
+/* Navbar */
+#nav-placeholder {
+    font-size:1em;
+    opacity:0;
+    z-index: -100;
+    padding: 0.99rem 0;
+}
+#navbar {
+	.hideOnDesktop {
+		display: block;
+	}
+    background:$color-light;
+    font-weight: 400;
+    font-family: ff-tisa-web-pro, serif;
+    font-size: 1em;
+    z-index:9;
+    // box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+    transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	a {
+		margin: 0 1.5rem;
+		color:black;
+		opacity: 0.7;
+		&:hover {
+			text-decoration: underline;
+			text-decoration-color: $color-theme-dark;
+		}
+	}
+	i:hover {
+		color: $color-theme-dark;
+	}
+	.navbar-brand {
+		padding: 0.05rem 0.3rem;
+		border: 3px black solid;
+		font-weight:400;
+		text-decoration: none !important;
+	}
+	.navbar-list {
+		transition: height 0.5s;
+	}
+	.navbar-list.show {
+		position:fixed;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		width: 100vw;
+		left: 0px;
+		background: white;
+		top: 0px;
+		align-items: center;
+		justify-content: center !important;
+	}
+	/***************************/
+	.nav-btn {
+		height:30px;
+		width:30px;
+		display:block;
+		float:right;
+		cursor: pointer;
+	/* margin: 10px; */
+		border-radius: 4px;
+		transition: all 0.4s;
+		-webkit-transition: all 0.4s;
+		-moz-transition: all 0.4s;
+		&.rotate{
+			transform: rotate(180deg);
+		}
+		.btn-line {
+			display:block;
+			width: 28px;
+			height: 3px;
+			margin: 5px 0 5px 0;
+			background: black;
+			transition: all 0.4s;
+			-webkit-transition: all 0.4s;
+			-moz-transition: all 0.4s;
+		}
+	}
+}
+
+
+#navbar.clear .navbar-brand:hover, .navbar-brand:hover{
+	border: 3px $color-theme-dark solid;
+}
+
+@media screen and (min-width: $breakpoint-lg){
+	.navbar .nav-btn{
+		display:none;
+	}
+	#navbar {
+		.hideOnDesktop {
+			display: none;
+		}
+	}
+}
+@media screen and (max-width: 350px){
+	.navbar .nav-btn {
+		height:30px;
+		width:20px;
+
+	}
+	.navbar .btn-line {
+		width:20px
+	}
+}
+
+
+
+#navbar.clear .btn-line{
+    background: white;
+}
+#navbar.clear .navbar-brand{
+    border: 3px white solid;
+}
+/***************************/

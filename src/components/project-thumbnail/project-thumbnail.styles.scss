@@ -1,0 +1,185 @@
+
+@import "../../styles/_colors.scss";
+// .project-frame:hover .info-frame .project-description{
+//     max-height:900px;
+//     opacity: 0.67;
+// }
+.project-frame-outer {
+    padding: 2.5em 0;
+
+}
+.project-frame.isVisible .info-frame .project-description
+// .project-frame .info-frame:hover .project-description
+{
+    max-height:900px;
+    opacity: 0.67;
+}
+
+.project-frame {
+    .image-frame {
+        flex: 5;
+        div {
+            margin: 1em auto;
+            position: relative;
+            padding-top: 66.7%;
+            overflow:hidden;
+            img {
+                position: absolute;
+                width:100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                display:block;
+                transition: transform 300ms;
+            }
+
+        }
+    }
+    // &:hover {
+        .image-frame:hover img{
+            transform: scale(1.1);
+        }
+
+
+    // }
+
+    .info-frame {
+        margin-top: 1em;
+        .project-name, .project-title, .project-year, .project-description {
+            color: $color-dark;
+        }
+        h2.project-name {
+            font-size: 2rem;
+        }
+        .project-description {
+            font-size: 0.8em;
+            opacity:0;
+            margin-top: 0;
+            margin-bottom: 0;
+            max-height: 0;
+            transition:  max-height 1000ms ease-in-out , opacity 1000ms ease;
+        }
+
+        .project-title { 
+            margin-top: -0.8em;
+            margin-bottom: 0.1em;
+        }
+        .project-name{
+            font-weight: 500;
+            transition: transform 300ms;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        
+        .project-year {
+            text-align: right;
+            font-size: 1.5em;
+            opacity:0.2;
+            font-weight: 900;
+            line-height: 1em;
+            margin-bottom: 0;
+        }
+        .project-icons {
+            color: $color-theme;
+            font-size: 1.6em;
+            line-height: 0.5em;
+            span {
+                font-size: 0.4em;
+            }
+            i {
+                margin-right: 10px;
+            }
+        }
+    }
+    &:hover {
+        * {text-decoration: none;}
+    }
+    *:hover {
+        text-decoration:none;
+        * {
+            text-decoration:none;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-md) {
+    .project-frame {
+        display: flex;
+        align-items: center;
+        &.odd .info-frame {
+            order:1;
+            padding-right:2em;
+        }
+        &.even .info-frame {
+            order:2;
+            padding-left: 2em;
+        }
+        &.odd .image-frame {
+            order:2;
+        }
+        &.even .image-frame {
+            order:1;
+        }
+        .info-frame {
+            flex:4;
+            margin-top: 0;
+
+        }
+    }
+}
+
+
+
+
+.project-thumbnail-grid {
+    .image-frame {
+        background-color: grey;
+        position: relative;
+        width: 100%;
+        padding-top: 62.5%;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transition: all 0.3s;
+            display: block;
+            transform: scale(1);
+        }
+        .overlay-info {
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            transition: all .3s ease;
+            opacity: 0;
+            // background-color: rgba(255, 255, 255, 0.75);
+            background-color: rgba($color-light, 0.9);
+            // text-decoration: none;
+            color: $color-dark;
+            .text {
+                position: absolute;
+                bottom: 0.5em;
+                left: 0.8em;
+                right: 0.8em;
+            }
+        }
+        &:hover {
+            .overlay-info {
+                opacity: 1;
+            }
+            img {
+                transform: scale(1.1);
+                // filter: blur(10px);
+            }
+        }
+    }
+}

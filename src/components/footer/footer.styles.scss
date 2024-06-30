@@ -1,0 +1,69 @@
+@import "../../styles/_colors.scss";
+
+
+
+
+.footer {
+    // overflow-anchor: none;
+    .footer-container {
+        padding-top:2em;
+        padding-bottom:2em;
+    }
+    .App-logo {
+        height: 0.8em;
+        pointer-events: none;
+        display: inline;
+    }
+    @media (prefers-reduced-motion: no-preference) {
+        .App-logo {
+            animation: App-logo-spin infinite 20s linear;
+        }
+    }
+    @keyframes App-logo-spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    background-color: $color-dark;
+    color: $color-grey;
+    display: block;
+    .icons {                
+        a {
+            margin-left: 0;
+            margin-right: 0.6em;
+            // margin-right: 0.5em;
+            color: $color-grey-light;
+            font-size: 1.4em;
+            &:hover {
+                color: $color-theme;
+            }   
+        }
+    }
+    .right-text{
+        margin-bottom: 1em;
+    }
+}
+
+@media (min-width:$breakpoint-md) {
+    .footer {
+        .right-text {
+            margin-bottom: 0;
+            // order: 2;
+            // text-align:right;
+        }
+        .icons {                
+            a {
+                margin-left: 0.6em;
+                margin-right: 0;  
+            }
+        }
+        .design-and-build {
+            text-align: right;
+        }
+    }
+}
+

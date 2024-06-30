@@ -1,0 +1,144 @@
+@import "../../styles/_colors.scss";
+
+$nav4-height: 60px;
+$nav4-height-xxxl: 80px;
+
+#nav4 {
+    .hideOnDesktop {
+        display:block;
+    }
+    .showOnDesktop {
+        display:none;
+    }
+
+    a.nav4-link {
+        color: $color-dark;
+        &:hover, &:focus {
+            text-decoration: none;
+            .navbar-page-title {
+                color: $color-theme;
+            }
+        }
+    }
+    .nav4-brand {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+
+        img {
+            width: 40px;
+            height: auto;
+        }
+        .nav4-text {
+            color: $color-dark;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            // transform: translateY(3px);
+        }
+        &:hover, &:focus {
+            text-decoration: none;
+        }
+    }
+    // #nav4-placeholder {
+    //     width: 1px;
+    //     height: $nav4-height;
+    //     pointer-events: none;
+    //     opacity: none;
+    //     z-index: -10;
+    // }
+    #nav4-navbar {
+        position:fixed;
+        width: 100%;
+        height: $nav4-height;
+        z-index: 30;
+        background-color: $color-light;
+        // background-color: #eee;
+        // border-bottom: $color-light 2px solid;
+        .container {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #nav4-menu-button {
+            transform: rotate(0);
+            transition:transform 0.5s;
+            &.rotate {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    /* The Overlay (background) */
+
+
+    #nav4-menu {
+        height: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: $color-white;
+        overflow: hidden;
+        transition: 0.5s height;
+        will-change:height;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        .overlay-content {
+            // margin-top: em;
+            text-align: center;
+            display:flex;
+            flex-direction: column;
+            .navbar-page-title {
+                font-size: 2em;
+                font-family: $font-default-heading;
+            }
+            .navbar-page-subtitle {
+                margin-bottom: 1em;
+            }
+            @media (max-height: 400px) {
+                flex-direction: row;
+                div{
+                    margin-left: 0.5em;
+                    margin-right: 0.5em;
+                }
+            }
+        }
+
+        &.menuIsOpen {
+            height: 100vh;
+            a.nav4-link {
+                opacity:1;
+            }
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+        .hideOnDesktop {
+            display:none;
+        }
+        .showOnDesktop {
+            display:block;
+        }
+    }
+    @media screen and (min-width: $breakpoint-xxxl) {
+        #nav4-navbar {
+            height: $nav4-height-xxxl;
+            .nav4-brand img {
+                width: 60px;
+            }
+        }
+    }
+
+    /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+    // @media screen and (max-height: 450px) {
+    //     .overlay a {font-size: 20px}
+    //     .overlay .closebtn {
+    //     font-size: 40px;
+    //     top: 15px;
+    //     right: 35px;
+    //     }
+    // }
+}

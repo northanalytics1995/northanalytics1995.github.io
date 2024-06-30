@@ -1,0 +1,296 @@
+@import "./_colors.scss";
+.color-grey {color: $color-grey;}
+.color-grey-light {color: $color-grey-light;}
+.color-grey-light.hover:hover {
+    color: $color-dark;
+}
+.color-grey-light-more {
+    color: $color-grey-light-more;
+}
+.color-grey-light-extra {
+    color: $color-grey-light-extra;
+}
+.COLOR-LIGHT {color: $color-light;}
+
+
+.font-display {font-family: $font-display}
+.font-decoration {font-family: $font-decoration !important}
+
+body{
+    background-color: $color-white;
+}
+html {
+    font-size: 120%;
+    background-color: $color-white;
+}
+@media (min-width: $breakpoint-md) {
+    html {
+        font-size: 125%;
+    }
+}
+@media (min-width: $breakpoint-lg) {
+    html {
+        font-size: 130%;
+    }
+}
+@media (min-width: $breakpoint-xxxl) {
+    html {
+        font-size: 220%;
+    }
+}
+@media (min-width: $breakpoint-xxxxl) {
+    html {
+        font-size: 300%;
+    }
+}
+* {
+    font-family: $font-default;
+    font-weight: 400;
+    font-style: normal;
+    &.extra-bold {
+        font-weight: 700 !important;
+    }
+    &.bold {
+        font-weight: 600;
+    }
+    &.thin {
+        font-weight: 400;
+        font-family: $font-default-heading;
+    }
+    &.italic {
+        font-style: italic;
+    }
+}
+h2 {
+    font-size: 2.5rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-default-heading;
+    font-style: normal;
+}
+h1, h2, h3, h4 {
+    font-weight: 600;
+}
+h5, h6 {
+    font-weight:500;
+}
+
+a.anchor-link {
+    color: $color-theme;
+}
+a.anchor-link:hover {
+    color: $color-theme;
+}
+.link {
+    display: inline;
+}
+.link, .link:hover {
+    color: $color-theme-dark;
+}
+.link.arrow-right, 
+.link.arrow-left, 
+.link.arrow-down {
+    position: relative;
+}
+
+.link.arrow-right, arrow-down {
+    // margin-right: 1em;
+    // margin-right: 0.5em;
+}
+.link.arrow-left{
+    padding-left: 0.5em;
+    transform: translateX(1em);
+}
+.link.arrow-left:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute; /* Prevent underline of arrow */
+    content: "\f0d9"; /* Unicode hex for &raquo; */
+    transform: translateX(-0.8em);
+}
+.link.arrow-right:after {
+    // ==========================================
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    // display: inline-block;
+    width: 0;
+    position: absolute; /* Prevent underline of arrow */
+    content: "\f0da"; /* Unicode hex for &raquo; */
+    transform: translateX(0.35em);
+    // margin-right: 1em;
+}
+.link.arrow-down:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute; /* Prevent underline of arrow */
+    padding-left:0.4em; /* Add a little space between text and arrow */
+    content: "\f0d7"; /* Unicode hex for &raquo; */
+    transform: translateY(0.1em);
+}
+.theme-button {
+    &.global-button-disabled {
+        border: solid 2px $color-grey-light !important;
+        background-color: $color-light !important;
+        color: $color-grey !important;
+    }
+    border-radius: 1000px;
+    border: solid 2px $color-theme-dark;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    padding-bottom: 0.05em;
+    color: $color-theme-dark;
+    &:hover, &:focus {
+        background-color: $color-theme;
+        color: $color-white;
+        text-decoration: none;
+        border: solid 2px $color-theme;
+    }
+
+}
+p {
+    // font-size: 0.95em;
+}
+
+.bg-white {
+    background-color: white;
+}
+.BG-DARK {
+    background-color: $color-dark;
+}
+.background-white {background-color:$color-white;}
+.background-light {background-color: $color-light;}
+.background-grey {background-color: $color-grey-light;}
+.background-theme {    background-color: $color-theme;}
+.background-theme-light {    background-color: $color-theme-light;}
+.background-theme-dark {    background-color: $color-theme-dark;}
+.background-dark {    background-color: $color-dark;}
+
+$color-red: rgb(231, 47, 47);
+$color-yellow: rgb(241, 217, 0);
+$color-blue: rgb(36, 125, 241);
+$color-green:#5FD490;
+
+.color-white {    color: white;}
+.color-theme-dark {    color: $color-theme-dark;}
+.color-theme {    color: $color-theme;}
+.color-theme-contrast {    color: $color-theme-contrast;}
+.color-green {    color: $color-green;}
+
+.slick-slide div {
+    outline: none;
+    &:focus {
+        outline:none;
+    }
+}
+
+.text-shadow {
+    text-shadow: 1px 1px 10px rgba(0,0,0, 0.05);
+}
+
+.global-box-shadow {
+    box-shadow:
+    0 1.4px 2.2px rgba(0, 0, 0, 0.02),
+    0 3.3px 5.3px rgba(0, 0, 0, 0.028),
+    0 6.3px 10px rgba(0, 0, 0, 0.035),
+    0 11.2px 17.9px rgba(0, 0, 0, 0.042),
+    0 20.9px 33.4px rgba(0, 0, 0, 0.05),
+    0 50px 80px rgba(0, 0, 0, 0.07)
+  ;
+}
+.global-box-shadow-3d
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.global-box-shadow-3d:before, .global-box-shadow-3d:after
+{
+  content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.global-box-shadow-3d:after
+{
+  right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+.opacity-75 {   opacity: 0.75;}
+.opacity-50 {   opacity: 0.5;}
+.opacity-0 {    opacity: 0;}
+
+.text-size-150 {font-size: 150%;}
+.text-size-125 {font-size: 125%;}
+.text-size-100 {font-size: 100%;}
+.text-size-90 {font-size: 90%;}
+.text-size-80 {font-size: 80%;}
+.text-size-70 {font-size: 70%;}
+.text-size-60 {font-size: 60%;}
+
+.text-small {font-size: 0.85em;}
+@media (min-width: $breakpoint-lg) {
+    .text-small {   font-size: 0.75em;}
+}
+.text-extra-small {   font-size: 0.6em;}
+.hover-zoom { 
+    transition: transform 100ms;
+}
+.hover-zoom:hover {
+    transform: scale(1.1);
+}
+
+// .color-red {color: $color-red;}
+// .color-yellow {color: $color-yellow;}
+// .color-blue {color: $color-blue;}
+// .color-green {color: $color-green;}
+
+.tag{
+    // color: $color-light;
+    border-radius: 500px;
+    border: $color-theme-dark 2px solid;
+    padding: 0.1em 0.4em;
+    margin-right:  0.3em;
+}
+.background {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    @media (min-width: $breakpoint-md) {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.background.bottom {
+    background-position: bottom;
+}
+.background.top {
+    background-position: top;
+}
+.global-hr { 
+    margin-left: 0;
+    width: 5em;
+    background-color: $color-theme;
+    border: none;
+    height: 0.3em;
+}
+
+
+.spinner-border.spinner-theme {
+    border-color: $color-theme-dark;
+}

@@ -1,0 +1,36 @@
+@import "../../styles/_colors.scss";
+
+.contact-page-component {
+
+    .wrapper{
+        .left-form {
+            margin-bottom: 2em;
+        }
+        .right-info {
+
+        }
+    }
+    .contact-icons a {
+        margin-right: 0.5em;
+        color: $color-theme-dark;
+        font-size: 1.7em;
+        &:hover {
+            color: $color-theme;
+        }   
+    }
+    @media (min-width: $breakpoint-lg) {
+        .wrapper {
+            display: flex;
+            // align-items: center;
+            .left-form {
+                margin-right: 2em;
+                flex: 1;
+                margin-bottom: 0;
+            }
+            .right-info {
+                margin-left: 2em;
+                flex: 1;
+            }
+        }
+    }
+}
