@@ -7,7 +7,7 @@ import "./horizontal-scroll-new.styles.scss";
 import Slider from "react-slick";
 import "../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
-import bg from "../../../img/background-transp.png";
+import bg from "../../img/background-transp.png";
 // import bg from "../../img/bg.jpg";
 
 

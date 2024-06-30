@@ -3,7 +3,7 @@ import "./home.styles.scss";
 
 import {Link} from "react-router-dom";
 
-import backgroundSolid from "../../../img/background-solid.png";
+import backgroundSolid from "../../img/background-solid.png";
 
 
 import Footer from "../../components/footer/footer.component";
