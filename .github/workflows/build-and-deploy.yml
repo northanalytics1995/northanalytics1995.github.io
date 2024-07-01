@@ -5,6 +5,7 @@ on:
       - main
 jobs:
   build-and-deploy:
+    permissions: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
