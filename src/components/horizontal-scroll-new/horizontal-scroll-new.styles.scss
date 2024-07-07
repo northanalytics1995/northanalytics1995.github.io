@@ -12,11 +12,11 @@
         background-color:rgba(0,0,0, 0.02);
         border-radius: 20px;
         .icon {
-            color: $color-theme-dark;
+            color: $color-theme;
             transform: scale(1.1, 1.1);
         }
         .label {
-            color: $color-theme-dark;
+            color: $color-theme;
         }
     }
     .item:active{

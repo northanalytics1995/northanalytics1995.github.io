@@ -26,11 +26,11 @@
 		opacity: 0.7;
 		&:hover {
 			text-decoration: underline;
-			text-decoration-color: $color-theme-dark;
+			text-decoration-color: $color-theme;
 		}
 	}
 	i:hover {
-		color: $color-theme-dark;
+		color: $color-theme;
 	}
 	.navbar-brand {
 		padding: 0.05rem 0.3rem;
@@ -83,7 +83,7 @@
 
 
 #navbar.clear .navbar-brand:hover, .navbar-brand:hover{
-	border: 3px $color-theme-dark solid;
+	border: 3px $color-theme solid;
 }
 
 @media screen and (min-width: $breakpoint-lg){

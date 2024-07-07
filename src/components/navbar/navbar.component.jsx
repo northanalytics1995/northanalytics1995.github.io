@@ -55,8 +55,8 @@ class Navbar extends React.Component {
                 <div id="nav4-navbar" className="">
                     <div className="container">
                         <a className="nav4-brand" href="/">
-                            <img src={logo} alt="logo"/>
-                            <div className="nav4-text pl-2"> Dyl</div>
+                            {/* <img src={logo} alt="logo"/> */}
+                            <div className="nav4-text pl-2"> North Analytics</div>
                         </a>
                         <div                             
                             id="nav4-menu-button"
@@ -104,7 +104,7 @@ class Navbar extends React.Component {
                             data-event-label={"Go to home page"}
                         >
                             <div className="navbar-page-title bold">Home</div>
-                            <div className="navbar-page-subtitle">About me</div> 
+                            <div className="navbar-page-subtitle">About us</div> 
                         </Link>
                         <Link 
                             className="nav4-link" 

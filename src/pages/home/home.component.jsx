@@ -69,8 +69,8 @@ class HomeNew extends React.Component {
         <div className="home-new background-white">
                     <h1 className="mt-5 pt-4 pt-xxl-5 text-center mb-2 main-title font-display">North Analytics</h1>
             <div className="container">
-                <div className=" main-container">
-                    <div className="heading2">We are a Analytics company based in Toronto, Canada</div>
+                <div className=" main-container mb-5">
+                    <div className="heading2">We are an analytics company based in Toronto, Canada</div>
                     <div className="d-block d-sm-flex justify-content-center align-items-center my-2">
                         <div 
                             className="link theme-button d-block mx-3 ml-sm-0 mb-2 mb-sm-0" 
@@ -98,7 +98,7 @@ class HomeNew extends React.Component {
 
             <div className="py-5 background" style={{backgroundImage:`url(${backgroundSolid})`}}>
                 <div className="container pt-5">
-                    <h2 className="font-display">Here's what I can do.</h2>
+                    <h2 className="font-display">Our services.</h2>
                     <VisibilitySensor onChange={isVisible => {
                         // console.log("Scrolling");
                         if (isVisible) {

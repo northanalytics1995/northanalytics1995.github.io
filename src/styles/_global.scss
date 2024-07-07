@@ -85,7 +85,7 @@ a.anchor-link:hover {
     display: inline;
 }
 .link, .link:hover {
-    color: $color-theme-dark;
+    color: $color-theme;
 }
 .link.arrow-right, 
 .link.arrow-left, 
@@ -134,11 +134,11 @@ a.anchor-link:hover {
         color: $color-grey !important;
     }
     border-radius: 1000px;
-    border: solid 2px $color-theme-dark;
+    border: solid 2px $color-theme;
     padding-left: 0.7em;
     padding-right: 0.7em;
     padding-bottom: 0.05em;
-    color: $color-theme-dark;
+    color: $color-theme;
     &:hover, &:focus {
         background-color: $color-theme;
         color: $color-white;
@@ -162,7 +162,7 @@ p {
 .background-grey {background-color: $color-grey-light;}
 .background-theme {    background-color: $color-theme;}
 .background-theme-light {    background-color: $color-theme-light;}
-.background-theme-dark {    background-color: $color-theme-dark;}
+.background-theme-dark {    background-color: $color-theme;}
 .background-dark {    background-color: $color-dark;}
 
 $color-red: rgb(231, 47, 47);
@@ -171,7 +171,7 @@ $color-blue: rgb(36, 125, 241);
 $color-green:#5FD490;
 
 .color-white {    color: white;}
-.color-theme-dark {    color: $color-theme-dark;}
+.color-theme-dark {    color: $color-theme;}
 .color-theme {    color: $color-theme;}
 .color-theme-contrast {    color: $color-theme-contrast;}
 .color-green {    color: $color-green;}
@@ -262,7 +262,7 @@ $color-green:#5FD490;
 .tag{
     // color: $color-light;
     border-radius: 500px;
-    border: $color-theme-dark 2px solid;
+    border: $color-theme 2px solid;
     padding: 0.1em 0.4em;
     margin-right:  0.3em;
 }
@@ -292,5 +292,5 @@ $color-green:#5FD490;
 
 
 .spinner-border.spinner-theme {
-    border-color: $color-theme-dark;
+    border-color: $color-theme;
 }

@@ -72,7 +72,7 @@ class Footer extends React.Component {
                     <div className=" d-block d-md-flex align-items-end justify-content-between">
                         <div className="right-text">
                             <div className="icons">{renderContactLinks()}</div>
-                            <div className="text-small">Say hi - dingqi.liu [at] ryerson.ca</div>
+                            <div className="text-small">Say hi - northanalytics1995 [at] gmail.com</div>
                         </div>
                         <div  className="design-and-build">
                             <div className="text-small">Designed and built by Dylan</div>
