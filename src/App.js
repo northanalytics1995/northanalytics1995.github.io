@@ -30,7 +30,7 @@ const routes = [
 // routes.forEach((route) => {
 //     route.path = process.env.PUBLIC_URL + route.path;
 // })
-const PAGE_NAME = "Dylan's Site"
+const PAGE_NAME = "North Analytics"
 
 function getPageName(pagePath) {
     let name = null;
