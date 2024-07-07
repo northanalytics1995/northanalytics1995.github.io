@@ -4,8 +4,6 @@ import "./Navbar4.scss";
 
 // import "./navbar3.scss";
 
-import logo from "../../img/logo-abstract.png";
-
 import { Link } from "react-router-dom";
 
 import HamburgerMenu from "react-hamburger-menu";
