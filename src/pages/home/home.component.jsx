@@ -19,29 +19,24 @@ import VisibilitySensor from "react-visibility-sensor";
 
 const whatIDoList = [
     {
-        icon: <i className="fas fa-drafting-compass"></i>,
-        title: "Design and Prototype",
-        desc: "Design and prototype user-centered and visually appealing user interfaces."
+        icon: <i className="fa-solid fa-chart-simple"></i>,
+        title: "Custom Data Tracking",
+        desc: "Design and implement custom analytics tracking by experts based on your needs."
     },
     {
-        icon: <i className="fas fa-drafting-compass"></i>,
-        title: "Design and Prototype",
-        desc: "Design and prototype user-centered and visually appealing user interfaces."
+        icon: <i className="fa-solid fa-magnifying-glass"></i>,
+        title: "SEO Analytics",
+        desc: "Analytics driven Search Engine Optimization, improve site traffic with evidence."
     },
     {
-        icon: <i className="fas fa-drafting-compass"></i>,
-        title: "Design and Prototype",
-        desc: "Design and prototype user-centered and visually appealing user interfaces."
+        icon: <i className="fas fa-solid fa-computer"></i>,
+        title: "Data Visualization",
+        desc: "Utilize dashboards to unlock the power of data, visualize your business performance with ease."
     },
     {
-        icon: <i className="fas fa-drafting-compass"></i>,
+        icon: <i className="fas fa-pen-nib"></i>,
         title: "Design and Prototype",
-        desc: "Design and prototype user-centered and visually appealing user interfaces."
-    },
-    {
-        icon: <i className="fas fa-drafting-compass"></i>,
-        title: "Design and Prototype",
-        desc: "Design and prototype user-centered and visually appealing user interfaces."
+        desc: "Design and prototype user-centered web interfaces, optimize UI to maximize click rates."
     },
 
 ]
@@ -70,7 +65,7 @@ class HomeNew extends React.Component {
                     <h1 className="mt-5 pt-4 pt-xxl-5 text-center mb-2 main-title font-display">North Analytics</h1>
             <div className="container">
                 <div className=" main-container mb-5">
-                    <div className="heading2">We are an analytics company based in Toronto, Canada</div>
+                    <div className="heading2">Transform your online business with actionable insights.</div>
                     <div className="d-block d-sm-flex justify-content-center align-items-center my-2">
                         <div 
                             className="link theme-button d-block mx-3 ml-sm-0 mb-2 mb-sm-0" 
@@ -87,7 +82,7 @@ class HomeNew extends React.Component {
                             data-event-category="Virtual link"
                             data-event-action="Click"
                             data-event-label="Go to projects from home page"
-                        > Contact me <i className="ml-1 fas fa-caret-right"></i></Link>
+                        > Contact us <i className="ml-1 fas fa-caret-right"></i></Link>
                     </div>
                    
                 </div>

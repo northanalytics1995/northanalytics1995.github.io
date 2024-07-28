@@ -60,7 +60,7 @@ const HorizontalScroll = () => {
             <div className="container my-4">
                 <h2 className="font-display">About us.</h2>
                 <hr className="mb-4 hr-theme"></hr>
-                <p className="paragraph-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc suscipit vulputate dapibus. In interdum dapibus nisi sit amet tincidunt. Nunc non diam dapibus lorem faucibus volutpat. Proin porta metus id pharetra suscipit. Nulla ac mauris id leo interdum viverra id vel augue. Nunc pretium est sed sapien dignissim, dapibus ornare sem faucibus. Fusce eu nisi condimentum, cursus ligula semper, molestie orci. Nulla vitae efficitur leo. Ut facilisis nibh ante, non tincidunt purus rhoncus eu. Duis quis fermentum dolor, vitae luctus orci. Maecenas pulvinar congue mi ac ullamcorper. Curabitur lobortis purus id purus sollicitudin tincidunt. Suspendisse finibus, felis vel blandit suscipit, velit purus ullamcorper felis, eget laoreet tortor nibh at quam.
+                <p className="paragraph-description"> We are a team of experts in data and analytics baesd in Toronto, Canada. Our comprehensive data analytics services are taylored for individual clients to understand their audience, improve site traffic, gain click through rates, and grow their business. 
 
 </p>
             </div>

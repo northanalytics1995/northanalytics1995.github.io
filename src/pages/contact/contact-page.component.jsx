@@ -210,7 +210,7 @@ class ContactPage extends React.Component {
                                     {renderContactLinks()}
                                 </div>
                                 <div className="my-3 text-small">Location - Toronto, ON, Canada</div>
-                                <div className="my-3 text-small">Email - dingqi.liu [at] ryerson.ca</div>
+                                <div className="my-3 text-small">Email - info [at] northanalytics.ca</div>
                             </div>
                         </div>
 
