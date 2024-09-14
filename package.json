@@ -30,7 +30,7 @@
     "react-slick": "^0.27.10",
     "react-transition-group": "^4.4.1",
     "react-visibility-sensor": "^5.1.1",
-    "sass": "^1.77.6",
+    "sass": "~1.64.2",
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
