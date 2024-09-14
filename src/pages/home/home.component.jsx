@@ -21,8 +21,6 @@ import "../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 import bg from "../../img/background-transp.png";
 
-import Button from "../../components/button/button.component";
-
 class HomeNew extends React.Component {
   constructor() {
     super();
