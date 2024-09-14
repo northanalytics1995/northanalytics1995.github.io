@@ -133,7 +133,7 @@ $nav4-height-xxxl: 80px;
     #nav4-navbar {
       height: $nav4-height-xxxl;
       .nav4-brand img {
-        width: 60px;
+        width: $nav4-height-xxxl;
       }
     }
   }

@@ -1,53 +1,12 @@
 import React from "react";
 import "./footer.styles.scss";
-// import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 // import reactLogo from "../../img/react-logo-3.png";
 import reactLogo from "../../img/react-logo-3.png";
 import preval from "preval.macro";
 // import VisibilitySensor from "react-visibility-sensor";
 
 const dateTimeStamp = preval`module.exports = new Date().toLocaleString("en-CA", {timeZone: "America/New_York"});`;
-
-function renderContactLinks() {
-  const links = [
-    {
-      link: "https://www.instagram.com/",
-      icon: <i className="fab fa-instagram"></i>,
-      name: "Instagram",
-    },
-    {
-      link: "https://www.facebook.com/",
-      icon: <i className="fab fa-facebook-square"></i>,
-      name: "Facebook",
-    },
-    {
-      link: "https://www.linkedin.com/in/",
-      icon: <i className="fab fa-linkedin-in"></i>,
-      name: "LinkedIn",
-    },
-    {
-      link: "https://github.com/",
-      icon: <i className="fab fa-github"></i>,
-      name: "Github",
-    },
-  ];
-  return links.map((each) => {
-    return (
-      <a
-        className="ml-0 mr-3"
-        key={each.link}
-        href={each.link}
-        target="_blank"
-        rel="noreferrer"
-        data-event-category="Footer contact external link"
-        data-event-action="Click"
-        data-event-label={"Footer contact external link - Go to " + each.name}
-      >
-        {each.icon}
-      </a>
-    );
-  });
-}
 
 class Footer extends React.Component {
   render() {
@@ -72,22 +31,23 @@ class Footer extends React.Component {
           {/* <div className="bold mb-1">Thank you for visiting</div> */}
           <div className=" d-block d-md-flex align-items-end justify-content-between">
             <div className="right-text">
-              <div className="icons">{renderContactLinks()}</div>
-              <div className="text-small">
-                Say hi - northanalytics1995 [at] gmail.com
+              <div className="icons">
+                <Link
+                  className="nav4-link"
+                  to="/contact"
+                  data-event-category="Navbar virtual link"
+                  data-event-action="Click"
+                  data-event-label={"Go to home page"}
+                >
+                  <i className="far fa-envelope"></i>
+                </Link>
               </div>
             </div>
             <div className="design-and-build">
-              <div className="text-small">Designed and built by Dylan</div>
               <div>
                 <p className="mr-1 mt-1 d-inline  text-small">
-                  Powered by React
+                  Thank you for visiting.
                 </p>
-                <img
-                  src={reactLogo}
-                  className="App-logo color-white d-inline"
-                  alt="react logo"
-                />
               </div>
             </div>
           </div>
