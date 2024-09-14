@@ -132,7 +132,7 @@ class ContactPage extends React.Component {
       <div className="contact-page-component">
         <TitleUnit
           title="Get in touch"
-          titleParagraph="We’re here to help you unlock the full potential of your data and drive your marketing strategies to new heights. Whether you have a question about our services, need a customized analytics solution, or want to explore partnership opportunities, don’t hesitate to get in touch. Here’s how you can reach us:"
+          titleParagraph="We’re here to help you unlock the full potential of your data and drive your marketing strategies to new heights. Whether you have a question about our services, need a customized analytics solution, or want to explore partnership opportunities, don’t hesitate to get in touch."
           imageSrc={image}
           button={
             <div

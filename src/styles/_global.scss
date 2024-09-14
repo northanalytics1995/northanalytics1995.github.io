@@ -29,27 +29,27 @@ body {
   background-color: $color-white;
 }
 html {
-  font-size: 120%;
+  font-size: 100%;
   background-color: $color-white;
 }
 @media (min-width: $breakpoint-md) {
   html {
-    font-size: 125%;
+    font-size: 128%;
   }
 }
 @media (min-width: $breakpoint-lg) {
   html {
-    font-size: 130%;
+    font-size: 128%;
   }
 }
 @media (min-width: $breakpoint-xxxl) {
   html {
-    font-size: 200%;
+    font-size: 128%;
   }
 }
 @media (min-width: $breakpoint-xxxxl) {
   html {
-    font-size: 250%;
+    font-size: 128%;
   }
 }
 * {
