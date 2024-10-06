@@ -279,44 +279,4 @@ class ContactPage extends React.Component {
   }
 }
 
-// function renderContactLinks() {
-//   const links = [
-//     {
-//       link: "https://www.instagram.com/dylan.d.q/",
-//       icon: <i className="fab fa-instagram"></i>,
-//       name: "Instagram",
-//     },
-//     {
-//       link: "https://www.facebook.com/profile.php?id=100006511032746",
-//       icon: <i className="fab fa-facebook-square"></i>,
-//       name: "Facebook",
-//     },
-//     {
-//       link: "https://www.linkedin.com/in/dingqi-dylan-liu/",
-//       icon: <i className="fab fa-linkedin-in"></i>,
-//       name: "LinkedIn",
-//     },
-//     {
-//       link: "https://github.com/Dylan-Dingqi",
-//       icon: <i className="fab fa-github"></i>,
-//       name: "Github",
-//     },
-//   ];
-//   return links.map((each) => {
-//     return (
-//       <a
-//         key={each.link}
-//         href={each.link}
-//         target="_blank"
-//         rel="noreferrer"
-//         data-event-category="External link"
-//         data-event-action="Click"
-//         data-event-label={"Contact - Go to " + each.name}
-//       >
-//         {each.icon}
-//       </a>
-//     );
-//   });
-// }
-
 export default ContactPage;

@@ -10,21 +10,6 @@ const dateTimeStamp = preval`module.exports = new Date().toLocaleString("en-CA",
 class Footer extends React.Component {
   render() {
     return (
-      // <div className="footer">
-      //     <div className="footer-container container">
-      //         <div className="main">
-      //             <div className="heading font-decoration">Thank you for visiting</div>
-      //             <p className="caption">Say hi - dingqi.liu [at] ryerson.ca</p>
-      //             <div className="d-flex icons">
-      //                 {renderContactLinks()}
-      //             </div>
-      //         </div>
-      //     </div>
-      //     <div className="container bottom text-center">
-      //         <p className="mr-1 mt-1 d-inline">Designed and built by Dylan. Powered by React </p>
-      //         <img src={reactLogo} className="App-logo color-white d-inline" alt="react logo" />
-      //     </div>
-      // </div>
       <div className="footer">
         <div className="footer-container container">
           {/* <div className="bold mb-1">Thank you for visiting</div> */}

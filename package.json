@@ -1,7 +1,7 @@
 {
   "name": "north-analytics",
   "version": "0.1.0",
-  "homepage": "https://www.liudylan.com",
+  "homepage": "https://www.northanalytics.ca",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
